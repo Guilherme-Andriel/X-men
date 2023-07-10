@@ -1,6 +1,7 @@
-@media (max-width: 1120px){
+@media (max-width: 1120px){ 
+  
     .cabecalho .logo{
-        max-width: 190px;
+        max-width: 200px;
     }
 
     .selecao-de-personagens{
@@ -36,4 +37,16 @@
         margin: 20px auto;
     }
 
+}
+
+
+@media (max-width: 393px){
+    .selecao-de-personagens h2{
+        font-size: 1.4em;
+    }
+    #descricao-personagem{
+        width: 300px;
+    }
+
+    
 }

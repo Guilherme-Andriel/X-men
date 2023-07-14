@@ -1,4 +1,10 @@
 const personagens = document.querySelectorAll('.personagem');
+const audio = document.querySelector('#myAudio');
+const logo = document.querySelector('.logo');
+
+logo.addEventListener("click", () => {
+    audio.play()
+})
 
 personagens.forEach((personagem) => {
     personagem.addEventListener('mouseenter', () => {
@@ -8,16 +14,15 @@ personagens.forEach((personagem) => {
         }
 
         removerSelecaoDoPersonagem();
-
         personagem.classList.add('selecionado');
-       
+
         alterarImagemPersonagemSelecionado(personagem);
 
        
         alterarNomePersonagemSelecionado(personagem);
 
-      
         alterarDescricaoPersonagem(personagem);
+        
     })
 })
 

@@ -16,8 +16,10 @@
   <body>
     <header class="cabecalho">
       <img class="logo" src="./src/img//logo.svg" alt="Logo x-men">
+      <audio id="myAudio" src="./src/som/x-men.mp3" loop>
+        Seu Browser não tem suporte a tag audio.</audio>
     </header>
-
+    
     <main class="selecao-de-personagens">
       <section class="personagens">
         <h1 class="titulo">Selecione um personagem</h1>
@@ -27,6 +29,7 @@
               src="./src/img//card-ciclope.jpg"
               alt="Personagem Ciclope"
             />
+           
           </li>
           <li class="personagem" id="jean-grey" data-name="Jean Grey" data-description="Jean Grey é uma mutante nível ômega e o principal avatar da Força Fênix, no qual manifesta poderes cósmicos. A telepatia e telecinese">
             <img
@@ -87,7 +90,7 @@
 
         <div class="informacoes-personagem">
           <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
-          <p class="descricao-personagem" id="descricao-personagem">
+          <p class="descricao-personagem">
             Ele tem o poder de disparar rajadas ópticas por um acidente que
             aconteceu com ele quando criança, mas não consegue controlá-los
           </p>

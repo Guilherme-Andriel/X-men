@@ -1,13 +1,27 @@
 const personagens = document.querySelectorAll('.personagem');
 const audio = document.querySelector('#myAudio');
+const selecionarAudio = document.querySelector('#audioSelecionar');
 const logo = document.querySelector('.logo');
+let audioAtivado = true;
 
 logo.addEventListener("click", () => {
-    audio.play()
-})
+  if (audioAtivado) {
+    audio.play();
+    audioAtivado = false;
+  } else {
+    audio.pause();
+    audioAtivado = true;
+  }
+});
+
 
 personagens.forEach((personagem) => {
     personagem.addEventListener('mouseenter', () => {
+
+        personagem.addEventListener("click", () =>{
+            selecionarAudio.src = './src/som/SomDeSelecionar.mp3';
+            selecionarAudio.play();
+        })
 
         if(window.innerWidth < 450) {
             window.scrollTo({top: 0, behavior: 'smooth'});

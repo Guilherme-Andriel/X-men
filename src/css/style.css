@@ -8,7 +8,7 @@ body {
 
 body::before{
     content: "";
-    background-image: url(../imagens/bg-desktop.jpg);
+    background-image: url(../img/bg-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

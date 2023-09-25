@@ -158,6 +158,10 @@ body::before{
 			margin: 20px auto;
 	}
 
+	.video_xmen{
+		display: none;
+	}
+
 }
 
 
@@ -174,3 +178,16 @@ body::before{
 	
 }
 
+
+.video_xmen{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: 100%;
+	z-index: -100;
+	opacity: 0.2;
+
+}
